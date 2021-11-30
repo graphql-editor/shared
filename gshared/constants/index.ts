@@ -7,6 +7,7 @@ export const VERSION_STITCH_FILE = (name: string) => `stitch-${name}.graphql`;
 export const DEPLOY_FILE = "schema.graphql";
 export const FAKER_DEPLOY_FILE = "faker.json";
 export const ENDPOINT_CONFIGURATION_FILE = "cloudConfig.json";
+export const JAMSTACK_CONFIG_FILE = "jamstack.json";
 
 export const IS_FAKER_DEPLOY_FILE_REGEX = /^faker.json$/;
 export const IS_DEPLOY_FILE_REGEX = /^schema.graphql$/;
