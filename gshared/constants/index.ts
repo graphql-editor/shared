@@ -19,6 +19,8 @@ export const SLACK_JOIN = `https://discord.gg/wVcZdmd`;
 
 export const CLOUD_FOLDERS = {
   // GraphQL Cloud editable files
+  nocode: "nocode",
+  widgets: "widgets",
   gql: "gql",
   // Microservice cloud editable files
   microservice: "microservice",

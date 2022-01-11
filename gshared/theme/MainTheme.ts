@@ -25,6 +25,7 @@ export const MainTheme: EditorTheme = {
     mainFar: "#212121",
     mainFurther: "#1a1a1a",
     mainFurthest: "#0f0f0f",
+    mainBlack: "#0a0a0a",
     success: "#007fff",
     error: "#c1301f",
   },

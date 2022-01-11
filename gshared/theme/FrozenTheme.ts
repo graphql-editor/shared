@@ -25,6 +25,7 @@ export const FrozenTheme: EditorTheme = {
     mainFar: "#001921",
     mainFurther: "#00141a",
     mainFurthest: "#000c0f",
+    mainBlack: "#000609",
     success: "#00627f",
     error: "#831657",
   },

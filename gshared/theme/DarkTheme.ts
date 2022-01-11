@@ -24,6 +24,7 @@ const BaseTheme = {
     mainFar: "#130019",
     mainFurther: "#0f0014",
     mainFurthest: "#0b000f",
+    mainBlack: "#060009",
     success: "#0a6624",
     error: "#831621",
   },

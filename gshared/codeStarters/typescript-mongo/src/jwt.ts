@@ -1,7 +1,7 @@
 export default `import { FieldResolveInput } from "stucco-js";
 import { verify } from "jsonwebtoken";
 
-const decodeToken = <T>(token: string) => {
+export const decodeToken = <T>(token: string) => {
   if (!process.env.JWT_SECRET) {
     throw new Error("JWT secret not set");
   }

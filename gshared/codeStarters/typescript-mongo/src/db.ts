@@ -10,7 +10,12 @@ export type MongoModel<T, Replace = {}> = NullifyObject<{
   }> &
     Replace;
 
-const aClient = new MongoClient(process.env.MONGO_URL);
+const aClient = () => {
+  if(!process.env.MONGO_URL){
+    throw new Error("Please provide MONGO_URL env")
+  }
+  return new MongoClient(process.env.MONGO_URL);
+}
 let mongoConnection: { db: Db; client: MongoClient } | undefined = undefined;
 
 export const connectMongoDb = async () => {
@@ -20,7 +25,7 @@ export const connectMongoDb = async () => {
   if (!process.env.MONGO_URL) {
     throw new Error('Please provide database url in your environment settings');
   }
-  const client = await aClient.connect();
+  const client = await aClient().connect();
   const db = client.db();
   mongoConnection = {
     client,
