@@ -16,6 +16,9 @@ const BaseTheme = {
   secondaryHover: "#17bebb",
   main: "#d966ff",
   active: "#e6bccd",
+  salmon: "#ff8080",
+  public: "#43df2e",
+  private: "#f22e35",
   background: {
     mainClosest: "#9900cc",
     mainCloser: "#730099",
@@ -23,6 +26,7 @@ const BaseTheme = {
     mainMiddle: "#270033",
     mainFar: "#130019",
     mainFurther: "#0f0014",
+    mainFurthers: "#0d0010",
     mainFurthest: "#0b000f",
     mainBlack: "#060009",
     success: "#0a6624",
@@ -73,3 +77,54 @@ export type EditorTheme = ToThemeDict<typeof BaseTheme> & {
   base: BuiltinTheme;
 };
 export const DarkTheme = BaseTheme as EditorTheme;
+
+type Join<K, P> = K extends string
+  ? P extends string
+    ? `${K}${"" extends P ? "" : "."}${P}`
+    : never
+  : never;
+
+type Prev = [
+  never,
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  ...0[]
+];
+
+type Leaves<T, D extends number = 10> = [D] extends [never]
+  ? never
+  : T extends object
+  ? { [K in keyof T]-?: Join<K, Leaves<T[K], Prev[D]>> }[keyof T]
+  : "";
+
+export type Colors = Leaves<EditorTheme>;
+
+export const getColorByKeyChain = (
+  key: string,
+  theme: Record<string, unknown>
+): string =>
+  key
+    .split(".")
+    .reduce(
+      (pv, cv) => pv[cv] as Record<string, unknown>,
+      theme
+    ) as unknown as string;
