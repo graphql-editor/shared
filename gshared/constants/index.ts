@@ -2,8 +2,8 @@ export const LATEST_VERSION = "latest";
 
 export const DEPLOY_FILE = "schema.graphql";
 export const FAKER_DEPLOY_FILE = "faker.json";
-export const ENDPOINT_CONFIGURATION_FILE = "cloudConfig.json";
-export const JAMSTACK_CONFIG_FILE = "jamstack.json";
+const ENDPOINT_CONFIGURATION_FILE = "cloudConfig.json";
+const JAMSTACK_CONFIG_FILE = "jamstack.json";
 
 export const IS_VERSION_FILE_REGEX = /^schema-(.*)\.json$/;
 
@@ -49,14 +49,13 @@ export const COMMON_FILES = (v: string) => ({
   hosts: fileInCloudFolder("gql")(ENDPOINT_CONFIGURATION_FILE),
   stucco: fileInCloudFolder("microserviceJs")(STUCCO_FILE),
   packageJSON: fileInCloudFolder("microserviceJs")(PACKAGE_JSON_FILE),
+  tsConfigJSON: fileInCloudFolder("microserviceJs")(TSCONFIG_JSON_FILE),
 });
 
 export const MICROSERVICE_DEPLOYMENT_FILE = "function.zip";
 export const STUCCO_FILE = "stucco.json";
 export const PACKAGE_JSON_FILE = "package.json";
-
-export const jamstackDeploymentUrl = (projectId: string) =>
-  `https://project-${projectId}.pages.graphqleditor.com`;
+export const TSCONFIG_JSON_FILE = "tsconfig.json";
 
 export const fileInCloudFolder =
   (k: keyof typeof CLOUD_FOLDERS) => (fileName: string) => {
