@@ -7,8 +7,10 @@ export default {
     build: "tsc",
   },
   devDependencies: {
-    "@types/node": "^12.6.9",
+    "@types/node": "^16.11.7",
     typescript: "latest",
   },
-  dependencies: {},
+  dependencies: {
+    "stucco-js": "latest",
+  },
 };
