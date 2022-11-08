@@ -7,8 +7,6 @@ const BaseTheme = {
   inactive: "#b7c7cc",
   dimmed: "#cee0e5",
   text: "#e3f6fc",
-  info: "#1f8eff",
-  success: "#3471b0",
   error: "#d49ea3",
   contra: "#000000",
   title: "#007fff",

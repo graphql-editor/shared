@@ -8,8 +8,6 @@ export const FrozenTheme: EditorTheme = {
   inactive: "#b7c7cc",
   dimmed: "#cee0e5",
   text: "#e3f6fc",
-  info: "#a3fce1",
-  success: "#00387a",
   error: "#d49ea3",
   contra: "#000000",
   title: "#1fcedb",

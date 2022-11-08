@@ -8,8 +8,6 @@ export const LightTheme: EditorTheme = {
   inactive: "#464646",
   dimmed: "#151515",
   text: "#080808",
-  info: "#2764f8",
-  success: "#1a5fb4",
   error: "#fa198b",
   contra: "#a6a6a6",
   title: "#007fff",
