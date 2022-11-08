@@ -10,7 +10,6 @@ export const FrozenTheme: EditorTheme = {
   text: "#e3f6fc",
   error: "#d49ea3",
   contra: "#000000",
-  title: "#1fcedb",
   hover: "#1fcedb",
   secondaryHover: "#17bebb",
   active: "#38997f",

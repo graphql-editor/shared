@@ -10,7 +10,6 @@ export const LightTheme: EditorTheme = {
   text: "#080808",
   error: "#fa198b",
   contra: "#a6a6a6",
-  title: "#007fff",
   hover: "#ee2549",
   secondaryHover: "#DD7230",
   main: "#d966ff",

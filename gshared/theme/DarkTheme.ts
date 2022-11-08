@@ -9,7 +9,6 @@ const BaseTheme = {
   text: "#e3f6fc",
   error: "#d49ea3",
   contra: "#000000",
-  title: "#007fff",
   hover: "#ffffff",
   secondaryHover: "#01c4bd",
   main: "#35d83b",
