@@ -8,7 +8,6 @@ export const MainTheme: EditorTheme = {
   inactive: "#b7c7cc",
   dimmed: "#cee0e5",
   text: "#e3f6fc",
-  success: "#007fff",
   error: "#d49ea3",
   contra: "#000000",
   title: "#007fff",
