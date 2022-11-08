@@ -3,7 +3,6 @@ import { EditorTheme } from "./DarkTheme";
 export const LightTheme: EditorTheme = {
   base: "vs",
   shadow: "#00000022 2px 2px 14px",
-  backgroundedText: "#ffffff",
   disabled: "#151515",
   inactive: "#464646",
   dimmed: "#151515",

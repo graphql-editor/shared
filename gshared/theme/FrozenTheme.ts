@@ -3,7 +3,6 @@ import { EditorTheme } from "./DarkTheme";
 export const FrozenTheme: EditorTheme = {
   base: "vs-dark",
   shadow: "#00000022 2px 2px 14px",
-  backgroundedText: "#F3F3F4",
   disabled: "#899599",
   inactive: "#b7c7cc",
   dimmed: "#cee0e5",
